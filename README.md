@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 Demo : https://affectionate-cray-17ae3b.netlify.app/
 
 ## Available Scripts
