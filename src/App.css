@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+}
+.Sidebar {
+  height: 700vh;
+  width: 320px;
+  background-color: #BC5B3C;
+  z-index: 1;
+  position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation */
+.navbar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: fixed;
+  top: 0;
+  width: 10%;
+  padding-left: 85px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: initial;
+  color: burlywood;
+  font-size: 14pt;
+  font-weight: bolder;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: right;
+}
+
+.navbar ul li {
   color: white;
+  font-size: 2em;
+  padding-right: 20px;
+  display: list-item;
 }
 
-.App-link {
-  color: #61dafb;
+/* List Sidebar */
+
+.about-section {
+  height: 100vh;
+  margin-left: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.experience-section {
+  height: 100vh;
+  margin-left: 25%;
+}
+
+.education-section {
+  height: 100vh;
+  margin-left: 25%;
+}
+
+.interests-section {
+  height: 100vh;
+  margin-left: 25%;
+}
+
+.skills-section {
+  height: 100vh;
+  margin-left: 25%;
+}
+
+.awards-section {
+  height: 100vh;
+  width: 77vw;
+  margin-left: 25%;
+}
+
+
+.navbar> .active {
+  border-bottom: 5px solid yellowgreen;
 }
